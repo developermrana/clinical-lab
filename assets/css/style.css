@@ -1,0 +1,70 @@
+/* font-family: "Poiret One", serif; */
+
+@font-face {
+  src: url(../fonts/Segoe-UI.ttf);
+  font-family: Segoe-UI !important;
+}
+/* common code start  */
+.text-primary {
+  color: #00d2d4 !important;
+}
+.text-secondary {
+  color: #f54785 !important;
+}
+.font-poiret {
+  font-family: "Poiret One", serif !important;
+}
+.font-segoe {
+  font-family: Segoe-UI !important;
+}
+/* common code start  */
+
+/* ========= navbar start ============  */
+.navbar .nav-item .nav-link {
+  color: #464646 !important;
+}
+.navbar .navbar-brand {
+  letter-spacing: 5px;
+}
+.navbar .nav-item {
+  position: relative;
+  margin: 0 5px;
+}
+.navbar .nav-item .nav-link.active {
+  color: #f54785 !important;
+}
+.navbar .nav-item .nav-link:hover {
+  color: #f54785 !important;
+}
+.navbar .nav-item .nav-link::after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: #f54785 !important;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+
+.navbar .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+.navbar .nav-item .nav-link.active::after {
+  width: 100%;
+}
+
+.navbar .navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  border: 1px solid #00d2d4 !important;
+}
+.navbar .navbar-toggler:focus {
+  border: none !important;
+  outline: none !important;
+}
+/* ========= navbar end ============  */
+
+/* ========= banner section start ============  */
+
+/* ========= banner section end ============  */
