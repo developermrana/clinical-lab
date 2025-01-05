@@ -5,6 +5,9 @@
   font-family: Segoe-UI !important;
 }
 /* common code start  */
+body {
+  overflow-x: hidden;
+}
 .text-primary {
   color: #00d2d4 !important;
 }
@@ -78,8 +81,7 @@
 }
 .banner-section #carouselExampleCaptions {
   max-width: 600px;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 40px 20px 40px 150px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .banner-section .carousel-indicators {
   left: 35%;
@@ -87,7 +89,7 @@
 }
 .carousel-indicators button {
   width: 10px !important;
-  height: 15px !important;
+  height: 10px !important;
   border: 2px solid #fff !important;
   border-radius: 50% !important;
   background-color: transparent !important;
@@ -103,22 +105,25 @@
 
 .about-section .about-image {
   background: url(../images/b1.jpg);
-  position: relative;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
 }
 .about-section .about-image .rotate {
-  transform: scale(0) rotate(-45deg);
-  transition: 0.5s;
   z-index: 555;
+  position: relative;
 }
 .about-section .about-image .rotate a {
+  transform: scale(0) rotate(-45deg);
   position: relative;
   padding: 35px 5px;
   display: inline-block;
   font-weight: bold;
   z-index: 5;
+  transition: 0.5s;
 }
-.about-section .about-image:hover .rotate {
+.about-section .about-image:hover .rotate > a {
   transform: scale(1) rotate(0);
 }
 .about-section .about-image .rotate a::after {
@@ -145,21 +150,20 @@
   content: "";
   display: block;
   position: absolute;
-  bottom: 0;
-  right: 0;
-  border-left: 120px solid rgba(34, 34, 34, 0.25);
-  border-top: 120px solid transparent;
-  z-index: 2;
+  bottom: 0em;
+  right: 0em;
+  border-left: 7.5em solid rgba(34, 34, 34, 0.25);
+  border-bottom: 7.5em solid transparent;
+  z-index: 1;
 }
 .about-section .about-layer1::after {
   content: "";
   display: block;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 0em;
+  right: 0em;
   border-right: 7.5em solid rgba(247, 247, 247, 0.25);
-  border-top: 7.5em solid transparent;
-  z-index: 2;
+  border-bottom: 7.5em solid transparent;
 }
 .about-section .about-layer2::before {
   content: "";
@@ -167,18 +171,17 @@
   position: absolute;
   bottom: 0em;
   right: 0em;
-  border-left: 120px solid rgba(34, 34, 34, 0.25);
-  border-top: 120px solid transparent;
-  z-index: 1;
+  border-left: 7.5em solid rgba(34, 34, 34, 0.25);
+  border-top: 7.5em solid transparent;
 }
 .about-section .about-layer2::after {
   content: "";
   display: block;
   position: absolute;
-  bottom: 0;
-  right: 0;
-  border-right: 120px solid rgba(247, 247, 247, 0.25);
-  border-top: 120px solid transparent;
+  bottom: 0em;
+  right: 0em;
+  border-right: 7.5em solid rgba(247, 247, 247, 0.25);
+  border-top: 7.5em solid transparent;
 }
 .about-section .about-layer3::before {
   content: "";
@@ -219,34 +222,34 @@
 }
 
 .about-layer1 {
-  left: 109%;
-  top: 111%;
+  left: 536px;
+  top: 314px;
 }
 .about-layer2 {
-  left: 115%;
-  top: -49%;
+  left: 509px;
+  top: -374px;
 }
 .about-layer3 {
-  left: -24%;
-  top: -39%;
+  left: -509px;
+  top: -374px;
 }
 .about-layer4 {
-  left: -33%;
-  top: 111%;
+  left: -509px;
+  top: 380px;
 }
 .about-section .about-image:hover .about-layer1 {
-  left: 49%;
-  top: 49%;
+  left: 44px;
+  top: 48px;
 }
 .about-section .about-image:hover .about-layer2 {
-  left: 49%;
-  top: 13%;
+  left: 44px;
+  top: -70px;
 }
 .about-section .about-image:hover .about-layer3 {
-  left: 27%;
-  top: 13%;
+  left: -76px;
+  top: -70px;
 }
 .about-section .about-image:hover .about-layer4 {
-  left: 27%;
-  top: 49%;
+  left: -76px;
+  top: 48px;
 }
