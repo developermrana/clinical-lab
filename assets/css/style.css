@@ -7,12 +7,16 @@
 /* common code start  */
 body {
   overflow-x: hidden;
+  font-family: Segoe-UI !important;
 }
 .text-primary {
   color: #00d2d4 !important;
 }
 .text-secondary {
   color: #f54785 !important;
+}
+.border-secondary {
+  border-color: #f54785 !important;
 }
 .font-poiret {
   font-family: "Poiret One", serif !important;
@@ -300,5 +304,68 @@ body {
 
 .offer-section .offer-icon:hover {
   background-color: transparent !important;
+  color: #fff !important;
   transition: 0.4s;
+}
+
+/* feature section start  */
+.feature-section .feature-item {
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)),
+    url(../images/f1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  transition: 0.7s;
+}
+.feature-section .feature-item:hover {
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+    url(../images/f1.jpg);
+  background-position: center;
+}
+.feature-section .feature-circle {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  border-top: 4px solid #f54785;
+  border-left: 4px solid #f54785;
+  border-right: 4px solid #d0d0d0;
+  border-bottom: 4px solid #d0d0d0;
+  position: absolute;
+  top: -12px;
+  left: -14px;
+  transition: 0.7s;
+}
+.feature-item:hover .feature-circle {
+  transform: rotate(180deg);
+}
+.feature-item:hover .feature-content > p {
+  color: #fff !important;
+}
+/* feature section end*/
+
+.footer-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/c1.jpg) no-repeat center;
+  background-size: cover;
+}
+.footer-section .title h2 {
+  position: relative;
+  display: inline-block;
+}
+.footer-section .title h2::after {
+  content: "";
+  width: 70%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.footer-section .social-link a {
+  transition: 0.5s;
+}
+.footer-section .social-link a:hover {
+  transform: rotate(90deg);
+  color: #f54785 !important;
 }
